@@ -38,7 +38,7 @@ static const t_ulong ProcessorCount = GetProcessorCount();
 #pragma warning(push)
 #pragma warning(disable : 4100)
 
-void F_STDCALL AtomicFunction::Add(volatile size_t *pnum, size_t val)
+void F_NAKED AtomicFunction::Add(volatile size_t *pnum, size_t val)
 {
 		if(ProcessorCount == 1)
 		{
@@ -61,7 +61,7 @@ void F_STDCALL AtomicFunction::Add(volatile size_t *pnum, size_t val)
 }
 
 
-void F_STDCALL AtomicFunction::Sub(volatile size_t *pnum, size_t val)
+void F_NAKED AtomicFunction::Sub(volatile size_t *pnum, size_t val)
 {
 		if(ProcessorCount == 1)
 		{
@@ -84,7 +84,7 @@ void F_STDCALL AtomicFunction::Sub(volatile size_t *pnum, size_t val)
 }
 		
 
-void F_STDCALL AtomicFunction::Increment(volatile size_t *pnum)
+void F_NAKED AtomicFunction::Increment(volatile size_t *pnum)
 {
 		if(ProcessorCount == 1)
 		{
@@ -104,7 +104,7 @@ void F_STDCALL AtomicFunction::Increment(volatile size_t *pnum)
 }
 
 
-void F_STDCALL AtomicFunction::Decrement(volatile size_t *pnum)
+void F_NAKED AtomicFunction::Decrement(volatile size_t *pnum)
 {
 		if(ProcessorCount == 1)
 		{
@@ -124,7 +124,7 @@ void F_STDCALL AtomicFunction::Decrement(volatile size_t *pnum)
 
 }
 
-void F_STDCALL AtomicFunction::Exchange(volatile size_t *pnum, size_t val)
+void F_NAKED AtomicFunction::Exchange(volatile size_t *pnum, size_t val)
 {
 		if(ProcessorCount == 1)
 		{
@@ -146,7 +146,7 @@ void F_STDCALL AtomicFunction::Exchange(volatile size_t *pnum, size_t val)
 }
 
 
-size_t F_STDCALL AtomicFunction::CompareExchange(volatile size_t *dest, size_t val, size_t cmpval)
+size_t F_NAKED AtomicFunction::CompareExchange(volatile size_t *dest, size_t val, size_t cmpval)
 {
 		if(ProcessorCount == 1)
 		{
