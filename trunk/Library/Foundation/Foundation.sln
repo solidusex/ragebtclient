@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Foundation", "Foundation.vcproj", "{25EAB807-993F-4444-A810-3190C4AAEA5A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FoundationTest", "FoundationTest\FoundationTest.vcproj", "{56F194AF-F100-46F8-85BE-D830F94CE676}"
+	ProjectSection(ProjectDependencies) = postProject
+		{25EAB807-993F-4444-A810-3190C4AAEA5A} = {25EAB807-993F-4444-A810-3190C4AAEA5A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DLLDebug|Win32 = DLLDebug|Win32
+		DLLRelease|Win32 = DLLRelease|Win32
+		LIBDebug|Win32 = LIBDebug|Win32
+		LIBRelease|Win32 = LIBRelease|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.DLLDebug|Win32.ActiveCfg = DLLDebug|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.DLLDebug|Win32.Build.0 = DLLDebug|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.DLLRelease|Win32.ActiveCfg = DLLRelease|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.DLLRelease|Win32.Build.0 = DLLRelease|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.LIBDebug|Win32.ActiveCfg = LIBDebug|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.LIBDebug|Win32.Build.0 = LIBDebug|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.LIBRelease|Win32.ActiveCfg = LIBRelease|Win32
+		{25EAB807-993F-4444-A810-3190C4AAEA5A}.LIBRelease|Win32.Build.0 = LIBRelease|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.DLLDebug|Win32.ActiveCfg = DLLDebug|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.DLLDebug|Win32.Build.0 = DLLDebug|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.DLLRelease|Win32.ActiveCfg = DLLRelease|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.DLLRelease|Win32.Build.0 = DLLRelease|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.LIBDebug|Win32.ActiveCfg = LIBDebug|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.LIBDebug|Win32.Build.0 = LIBDebug|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.LIBRelease|Win32.ActiveCfg = LIBRelease|Win32
+		{56F194AF-F100-46F8-85BE-D830F94CE676}.LIBRelease|Win32.Build.0 = LIBRelease|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
