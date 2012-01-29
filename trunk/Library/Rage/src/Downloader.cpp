@@ -632,6 +632,7 @@ void Downloader::download_thread()
 
 
 
+
 void Downloader::hash_thread()
 {
 		assert(m_state == DS_HASH_CHECKING && IsOpen());
