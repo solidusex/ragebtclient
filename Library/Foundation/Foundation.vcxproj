@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DLLDebug|Win32">
+      <Configuration>DLLDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DLLRelease|Win32">
+      <Configuration>DLLRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="LIBDebug|Win32">
+      <Configuration>LIBDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="LIBRelease|Win32">
+      <Configuration>LIBRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25EAB807-993F-4444-A810-3190C4AAEA5A}</ProjectGuid>
+    <RootNamespace>Foundation</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">..\..\Binary\Lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">..\..\Temp\LibDebug\Foundation\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">..\..\Binary\Lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">..\..\Temp\LibRelease\Foundation\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">..\..\Binary\DLL\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">..\..\Temp\DLLDebug\Foundation\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">..\..\Binary\DLL\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">..\..\Temp\DLLRelease\Foundation\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG; _LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Foundation.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS; NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)Foundation.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS; _DEBUG; _USRDLL;FOUNDATION_SHARED_LIB; FOUNDATION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Foundation.dll</OutputFile>
+      <ManifestFile>$(IntDir)$(TargetFileName).intermediate.manifest</ManifestFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS; NDEBUG;  _USRDLL; FOUNDATION_SHARED_LIB; FOUNDATION_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)Foundation.dll</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Foundation\Foundation.h" />
+    <ClInclude Include="Foundation\Thread\Thread.h" />
+    <ClInclude Include="Foundation\Thread\ThreadCallback.h" />
+    <ClInclude Include="Foundation\Thread\ThreadHdr.h" />
+    <ClInclude Include="Foundation\Thread\Win\ThreadImpl.h" />
+    <ClInclude Include="Foundation\Thread\ThreadPool.h" />
+    <ClInclude Include="Foundation\Thread\Timer.h" />
+    <ClInclude Include="Foundation\Thread\TypeDef.h" />
+    <ClInclude Include="Foundation\Thread\Singleton.h" />
+    <ClInclude Include="Foundation\Thread\TSDataFlow.h" />
+    <ClInclude Include="Foundation\Thread\TSDataPriorityQueue.h" />
+    <ClInclude Include="Foundation\Thread\TSDataQueue.h" />
+    <ClInclude Include="Foundation\Thread\AtomicFunction.h" />
+    <ClInclude Include="Foundation\Thread\Win\AtomicFunctionImpl.h" />
+    <ClInclude Include="Foundation\Thread\Barrier.h" />
+    <ClInclude Include="Foundation\Thread\Condition.h" />
+    <ClInclude Include="Foundation\Thread\Event.h" />
+    <ClInclude Include="Foundation\Thread\Win\EventImpl.h" />
+    <ClInclude Include="Foundation\Thread\FastMutex.h" />
+    <ClInclude Include="Foundation\Thread\Win\FastMutexImpl.h" />
+    <ClInclude Include="Foundation\Thread\Mutex.h" />
+    <ClInclude Include="Foundation\Thread\Win\MutexImpl.h" />
+    <ClInclude Include="Foundation\Thread\ReaderWriterMutex.h" />
+    <ClInclude Include="Foundation\Thread\Semaphore.h" />
+    <ClInclude Include="Foundation\Thread\Win\SemaphoreImpl.h" />
+    <ClInclude Include="Foundation\Thread\SpinLock.h" />
+    <ClInclude Include="Foundation\Thread\Token.h" />
+    <ClInclude Include="Foundation\Exception\Exception.h" />
+    <ClInclude Include="Foundation\Exception\ExptHdr.h" />
+    <ClInclude Include="Foundation\Exception\StdException.h" />
+    <ClInclude Include="Foundation\Common\ComnHdr.h" />
+    <ClInclude Include="Foundation\Common\Win\Config.h" />
+    <ClInclude Include="Foundation\Common\Win\Define.h" />
+    <ClInclude Include="Foundation\Common\Platform.h" />
+    <ClInclude Include="Foundation\Common\Win\Type.h" />
+    <ClInclude Include="Foundation\FileSystem\DirectoryIterator.h" />
+    <ClInclude Include="Foundation\FileSystem\Win\DirectoryIteratorImpl.h" />
+    <ClInclude Include="Foundation\FileSystem\File.h" />
+    <ClInclude Include="Foundation\FileSystem\Win\FileImpl.h" />
+    <ClInclude Include="Foundation\FileSystem\FileSystemHdr.h" />
+    <ClInclude Include="Foundation\FileSystem\MemMapFile.h" />
+    <ClInclude Include="Foundation\FileSystem\Win\MemMapFileImpl.h" />
+    <ClInclude Include="Foundation\FileSystem\Path.h" />
+    <ClInclude Include="Foundation\FileSystem\Win\PathImpl.h" />
+    <ClInclude Include="Foundation\FileSystem\TreeIterator.h" />
+    <ClInclude Include="Foundation\FileSystem\TypeDef.h" />
+    <ClInclude Include="Foundation\Utility\AnyType.h" />
+    <ClInclude Include="Foundation\Utility\ByteOrder.h" />
+    <ClInclude Include="Foundation\Utility\Constrain.h" />
+    <ClInclude Include="Foundation\Utility\Debug.h" />
+    <ClInclude Include="Foundation\Utility\Functor.h" />
+    <ClInclude Include="Foundation\Utility\Macro.h" />
+    <ClInclude Include="Foundation\Utility\NonCopyable.h" />
+    <ClInclude Include="Foundation\Utility\RandomNumber.h" />
+    <ClInclude Include="Foundation\Utility\RefCountedObject.h" />
+    <ClInclude Include="Foundation\Utility\ScopeGuard.h" />
+    <ClInclude Include="Foundation\Utility\SharedPtr.h" />
+    <ClInclude Include="Foundation\Utility\Trace.h" />
+    <ClInclude Include="Foundation\Utility\TypeCast.h" />
+    <ClInclude Include="Foundation\Utility\Typelist.h" />
+    <ClInclude Include="Foundation\Utility\UtilityHdr.h" />
+    <ClInclude Include="Foundation\Stream\AbstractStream.h" />
+    <ClInclude Include="Foundation\Stream\ByteStream.h" />
+    <ClInclude Include="Foundation\Stream\DataStream.h" />
+    <ClInclude Include="Foundation\Stream\FileStreamBuffer.h" />
+    <ClInclude Include="Foundation\Stream\MemStreamBuffer.h" />
+    <ClInclude Include="Foundation\Stream\StreamHdr.h" />
+    <ClInclude Include="Foundation\Stream\TypeDef.h" />
+    <ClInclude Include="Foundation\Net\Acceptor.h" />
+    <ClInclude Include="Foundation\Net\Connector.h" />
+    <ClInclude Include="Foundation\Net\Win\ConnectorImpl.h" />
+    <ClInclude Include="Foundation\Net\HostEntry.h" />
+    <ClInclude Include="Foundation\Net\InetAddress.h" />
+    <ClInclude Include="Foundation\Net\NetEventHandler.h" />
+    <ClInclude Include="Foundation\Net\NetHdr.h" />
+    <ClInclude Include="Foundation\Net\NetPipe.h" />
+    <ClInclude Include="Foundation\Net\NetSock.h" />
+    <ClInclude Include="Foundation\Net\Win\NetSockImpl.h" />
+    <ClInclude Include="Foundation\Net\Selector.h" />
+    <ClInclude Include="Foundation\Net\SockDgram.h" />
+    <ClInclude Include="Foundation\Net\SocketSet.h" />
+    <ClInclude Include="Foundation\Net\Win\SocketSetImpl.h" />
+    <ClInclude Include="Foundation\Net\SockStream.h" />
+    <ClInclude Include="Foundation\Net\TypeDef.h" />
+    <ClInclude Include="Foundation\Net\Win\TypeDefImpl.h" />
+    <ClInclude Include="Foundation\Net\Utility.h" />
+    <ClInclude Include="Foundation\Net\Win\UtilityImpl.h" />
+    <ClInclude Include="Foundation\Crypt\CryptHdr.h" />
+    <ClInclude Include="Foundation\Crypt\Algo\md2.h" />
+    <ClInclude Include="Foundation\Crypt\Algo\md4.h" />
+    <ClInclude Include="Foundation\Crypt\Algo\md5.h" />
+    <ClInclude Include="Foundation\Crypt\MDHash.h" />
+    <ClInclude Include="Foundation\Crypt\Algo\sha1.h" />
+    <ClInclude Include="Foundation\Crypt\Algo\sha2.h" />
+    <ClInclude Include="Foundation\Crypt\ShaHash.h" />
+    <ClInclude Include="Foundation\Crypt\TypeDef.h" />
+    <ClInclude Include="Foundation\Process\NamedEvent.h" />
+    <ClInclude Include="Foundation\Process\Win\NamedEventImpl.h" />
+    <ClInclude Include="Foundation\Process\NamedMutex.h" />
+    <ClInclude Include="Foundation\Process\Optex.h" />
+    <ClInclude Include="Foundation\Process\Win\OptexImpl.h" />
+    <ClInclude Include="Foundation\Process\Process.h" />
+    <ClInclude Include="Foundation\Process\ProcessHdr.h" />
+    <ClInclude Include="Foundation\Process\Win\ProcessImpl.h" />
+    <ClInclude Include="Foundation\Process\TypeDef.h" />
+    <ClInclude Include="Foundation\System\Environment.h" />
+    <ClInclude Include="Foundation\System\Win\EnvironmentImpl.h" />
+    <ClInclude Include="Foundation\System\SysHdr.h" />
+    <ClInclude Include="Foundation\System\TypeDef.h" />
+    <ClInclude Include="Foundation\SharedLibrary\SharedLibrary.h" />
+    <ClInclude Include="Foundation\SharedLibrary\SharedLibraryHdr.h" />
+    <ClInclude Include="Foundation\SharedLibrary\Win\SharedLibraryImpl.h" />
+    <ClInclude Include="Foundation\SharedLibrary\TypeDef.h" />
+    <ClInclude Include="Foundation\Format\FormatHdr.h" />
+    <ClInclude Include="Foundation\Format\NumberFormatter.h" />
+    <ClInclude Include="Foundation\Format\NumberParser.h" />
+    <ClInclude Include="Foundation\Format\StrConv.h" />
+    <ClInclude Include="Foundation\Format\Win\StrConvImpl.h" />
+    <ClInclude Include="Foundation\Format\TypeDef.h" />
+    <ClInclude Include="Foundation\MsgQueue\AuxFunc.h" />
+    <ClInclude Include="Foundation\MsgQueue\GlobalMap.h" />
+    <ClInclude Include="Foundation\MsgQueue\MsgCarrier.h" />
+    <ClInclude Include="Foundation\MsgQueue\MsgContext.h" />
+    <ClInclude Include="Foundation\MsgQueue\MsgQueueHdr.h" />
+    <ClInclude Include="Foundation\MsgQueue\MsgType.h" />
+    <ClInclude Include="Foundation\MsgQueue\TypeDef.h" />
+    <ClInclude Include="Foundation\Time\Cycle.h" />
+    <ClInclude Include="Foundation\Time\Win\CycleImpl.h" />
+    <ClInclude Include="Foundation\Time\StopWatch.h" />
+    <ClInclude Include="Foundation\Time\TimeHdr.h" />
+    <ClInclude Include="Foundation\Time\TimeStamp.h" />
+    <ClInclude Include="Foundation\Time\Win\TimeStampImpl.h" />
+    <ClInclude Include="Foundation\Time\TypeDef.h" />
+    <ClInclude Include="Foundation\Regex\deelx.h" />
+    <ClInclude Include="Foundation\Regex\Regex.h" />
+    <ClInclude Include="Foundation\DataStruct\Array2D.h" />
+    <ClInclude Include="Foundation\DataStruct\Bit.h" />
+    <ClInclude Include="Foundation\DataStruct\Buffer.h" />
+    <ClInclude Include="Foundation\DataStruct\DSHdr.h" />
+    <ClInclude Include="Foundation\DataStruct\TypeDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Foundation\Thread\Thread.cpp" />
+    <ClCompile Include="Foundation\Thread\Win\ThreadImpl.cpp" />
+    <ClCompile Include="Foundation\Thread\ThreadPool.cpp" />
+    <ClCompile Include="Foundation\Thread\Timer.cpp" />
+    <ClCompile Include="Foundation\Thread\TSDataFlow.cpp" />
+    <ClCompile Include="Foundation\Thread\TSDataPriorityQueue.cpp" />
+    <ClCompile Include="Foundation\Thread\TSDataQueue.cpp" />
+    <ClCompile Include="Foundation\Thread\AtomicFunction.cpp" />
+    <ClCompile Include="Foundation\Thread\Barrier.cpp" />
+    <ClCompile Include="Foundation\Thread\Condition.cpp" />
+    <ClCompile Include="Foundation\Thread\Event.cpp" />
+    <ClCompile Include="Foundation\Thread\Win\EventImpl.cpp" />
+    <ClCompile Include="Foundation\Thread\FastMutex.cpp" />
+    <ClCompile Include="Foundation\Thread\Win\FastMutexImpl.cpp" />
+    <ClCompile Include="Foundation\Thread\Mutex.cpp" />
+    <ClCompile Include="Foundation\Thread\Win\MutexImpl.cpp" />
+    <ClCompile Include="Foundation\Thread\ReaderWriterMutex.cpp" />
+    <ClCompile Include="Foundation\Thread\Semaphore.cpp" />
+    <ClCompile Include="Foundation\Thread\Win\SemaphoreImpl.cpp" />
+    <ClCompile Include="Foundation\Thread\SpinLock.cpp" />
+    <ClCompile Include="Foundation\Thread\Token.cpp" />
+    <ClCompile Include="Foundation\Exception\Exception.cpp" />
+    <ClCompile Include="Foundation\Exception\StdException.cpp" />
+    <ClCompile Include="Foundation\FileSystem\DirectoryIterator.cpp" />
+    <ClCompile Include="Foundation\FileSystem\Win\DirectoryIteratorImpl.cpp" />
+    <ClCompile Include="Foundation\FileSystem\File.cpp" />
+    <ClCompile Include="Foundation\FileSystem\Win\FileImpl.cpp" />
+    <ClCompile Include="Foundation\FileSystem\MemMapFile.cpp" />
+    <ClCompile Include="Foundation\FileSystem\Win\MemMapFileImpl.cpp" />
+    <ClCompile Include="Foundation\FileSystem\Path.cpp" />
+    <ClCompile Include="Foundation\FileSystem\Win\PathImpl.cpp" />
+    <ClCompile Include="Foundation\FileSystem\TreeIterator.cpp" />
+    <ClCompile Include="Foundation\Utility\ByteOrder.cpp" />
+    <ClCompile Include="Foundation\Utility\RandomNumber.cpp" />
+    <ClCompile Include="Foundation\Utility\RefCountedObject.cpp" />
+    <ClCompile Include="Foundation\Utility\Trace.cpp" />
+    <ClCompile Include="Foundation\Stream\ByteStream.cpp" />
+    <ClCompile Include="Foundation\Stream\DataStream.cpp" />
+    <ClCompile Include="Foundation\Stream\FileStreamBuffer.cpp" />
+    <ClCompile Include="Foundation\Stream\MemStreamBuffer.cpp" />
+    <ClCompile Include="Foundation\Net\Acceptor.cpp" />
+    <ClCompile Include="Foundation\Net\Connector.cpp" />
+    <ClCompile Include="Foundation\Net\HostEntry.cpp" />
+    <ClCompile Include="Foundation\Net\InetAddress.cpp" />
+    <ClCompile Include="Foundation\Net\NetPipe.cpp" />
+    <ClCompile Include="Foundation\Net\NetSock.cpp" />
+    <ClCompile Include="Foundation\Net\Selector.cpp" />
+    <ClCompile Include="Foundation\Net\SockDgram.cpp" />
+    <ClCompile Include="Foundation\Net\SocketSet.cpp" />
+    <ClCompile Include="Foundation\Net\SockStream.cpp" />
+    <ClCompile Include="Foundation\Net\Utility.cpp" />
+    <ClCompile Include="Foundation\Crypt\Algo\md2.cpp" />
+    <ClCompile Include="Foundation\Crypt\Algo\md4.cpp" />
+    <ClCompile Include="Foundation\Crypt\Algo\md5.cpp" />
+    <ClCompile Include="Foundation\Crypt\MDHash.cpp" />
+    <ClCompile Include="Foundation\Crypt\Algo\sha1.cpp" />
+    <ClCompile Include="Foundation\Crypt\Algo\sha2.cpp" />
+    <ClCompile Include="Foundation\Crypt\ShaHash.cpp" />
+    <ClCompile Include="Foundation\Process\NamedEvent.cpp" />
+    <ClCompile Include="Foundation\Process\Win\NamedEventImpl.cpp" />
+    <ClCompile Include="Foundation\Process\Optex.cpp" />
+    <ClCompile Include="Foundation\Process\Win\OptexImpl.cpp" />
+    <ClCompile Include="Foundation\Process\Process.cpp" />
+    <ClCompile Include="Foundation\Process\Win\ProcessImpl.cpp" />
+    <ClCompile Include="Foundation\System\Environment.cpp" />
+    <ClCompile Include="Foundation\System\Win\EnvironmentImpl.cpp" />
+    <ClCompile Include="Foundation\SharedLibrary\SharedLibrary.cpp" />
+    <ClCompile Include="Foundation\SharedLibrary\Win\SharedLibraryImpl.cpp" />
+    <ClCompile Include="Foundation\Format\NumberFormatter.cpp" />
+    <ClCompile Include="Foundation\Format\NumberParser.cpp" />
+    <ClCompile Include="Foundation\Format\StrConv.cpp" />
+    <ClCompile Include="Foundation\MsgQueue\AuxFunc.cpp" />
+    <ClCompile Include="Foundation\MsgQueue\GlobalMap.cpp" />
+    <ClCompile Include="Foundation\MsgQueue\MsgCarrier.cpp" />
+    <ClCompile Include="Foundation\MsgQueue\MsgContext.cpp" />
+    <ClCompile Include="Foundation\Time\Cycle.cpp" />
+    <ClCompile Include="Foundation\Time\StopWatch.cpp" />
+    <ClCompile Include="Foundation\Time\TimeStamp.cpp" />
+    <ClCompile Include="Foundation\DataStruct\Bit.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="Foundation\DataStruct\Buffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='DLLDebug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='DLLRelease|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='LIBDebug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='LIBRelease|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

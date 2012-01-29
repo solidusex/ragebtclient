@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Foundation">
+      <UniqueIdentifier>{44804255-d4a6-4f38-81e5-7aa3999a98dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Thread">
+      <UniqueIdentifier>{63dd8db5-31de-4fe1-b943-f74cf9bbb046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Thread\AuxTools">
+      <UniqueIdentifier>{74323167-e278-4623-b503-a88c5955ba2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Thread\SyncObjects">
+      <UniqueIdentifier>{329142b6-8c1a-43fc-aac2-52474d1939ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Exception">
+      <UniqueIdentifier>{bb71b504-18f9-4379-afca-93bfdf7b1309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Common">
+      <UniqueIdentifier>{5494da8d-85a6-4aa5-8417-146df080b0a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\FileSystem">
+      <UniqueIdentifier>{a165cecf-ee40-43d3-aac0-600e409e260f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Utility">
+      <UniqueIdentifier>{371b4d6a-d302-47fb-a367-f543fdacaac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Stream">
+      <UniqueIdentifier>{ae6ad56e-ad76-4b07-9e5d-b89290e77f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Net">
+      <UniqueIdentifier>{f0a66386-6f98-4d1a-ad67-d8fa4fb5fe13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Crypt">
+      <UniqueIdentifier>{4c438d7d-5a27-4ad9-9a89-c00f0f9ea339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Process">
+      <UniqueIdentifier>{8abd5ecc-e8f2-4262-8cce-2088955975f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\System">
+      <UniqueIdentifier>{f47c17b4-7e45-479a-bc72-8ebfe97b58b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\SharedLibrary">
+      <UniqueIdentifier>{513aab7f-7e46-429a-85ba-6b320a40c633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Format">
+      <UniqueIdentifier>{6b2e0570-9c8b-425c-b2c0-085df9cde020}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\MsgQueue">
+      <UniqueIdentifier>{c21ca098-93e5-4058-9d71-feaf8f52f72d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Time">
+      <UniqueIdentifier>{9f674b47-0683-48bd-94b7-e266d1837841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\Regex">
+      <UniqueIdentifier>{89505185-3aa3-4b6d-8622-16320a72a96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Foundation\DataStruct">
+      <UniqueIdentifier>{4ea7742a-3c3c-44b3-b948-78bb3711e00a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Foundation\Foundation.h">
+      <Filter>Foundation</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Thread.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\ThreadCallback.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\ThreadHdr.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\ThreadImpl.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\ThreadPool.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Timer.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\TypeDef.h">
+      <Filter>Foundation\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Singleton.h">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\TSDataFlow.h">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\TSDataPriorityQueue.h">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\TSDataQueue.h">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\AtomicFunction.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\AtomicFunctionImpl.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Barrier.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Condition.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Event.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\EventImpl.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\FastMutex.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\FastMutexImpl.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Mutex.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\MutexImpl.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\ReaderWriterMutex.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Semaphore.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Win\SemaphoreImpl.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\SpinLock.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Thread\Token.h">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Exception\Exception.h">
+      <Filter>Foundation\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Exception\ExptHdr.h">
+      <Filter>Foundation\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Exception\StdException.h">
+      <Filter>Foundation\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Common\ComnHdr.h">
+      <Filter>Foundation\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Common\Win\Config.h">
+      <Filter>Foundation\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Common\Win\Define.h">
+      <Filter>Foundation\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Common\Platform.h">
+      <Filter>Foundation\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Common\Win\Type.h">
+      <Filter>Foundation\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\DirectoryIterator.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\Win\DirectoryIteratorImpl.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\File.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\Win\FileImpl.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\FileSystemHdr.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\MemMapFile.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\Win\MemMapFileImpl.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\Path.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\Win\PathImpl.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\TreeIterator.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\FileSystem\TypeDef.h">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\AnyType.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\ByteOrder.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Constrain.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Debug.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Functor.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Macro.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\NonCopyable.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\RandomNumber.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\RefCountedObject.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\ScopeGuard.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\SharedPtr.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Trace.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\TypeCast.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\Typelist.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Utility\UtilityHdr.h">
+      <Filter>Foundation\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\AbstractStream.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\ByteStream.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\DataStream.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\FileStreamBuffer.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\MemStreamBuffer.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\StreamHdr.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Stream\TypeDef.h">
+      <Filter>Foundation\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Acceptor.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Connector.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Win\ConnectorImpl.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\HostEntry.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\InetAddress.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\NetEventHandler.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\NetHdr.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\NetPipe.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\NetSock.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Win\NetSockImpl.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Selector.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\SockDgram.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\SocketSet.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Win\SocketSetImpl.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\SockStream.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\TypeDef.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Win\TypeDefImpl.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Utility.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Net\Win\UtilityImpl.h">
+      <Filter>Foundation\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\CryptHdr.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\Algo\md2.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\Algo\md4.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\Algo\md5.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\MDHash.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\Algo\sha1.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\Algo\sha2.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\ShaHash.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Crypt\TypeDef.h">
+      <Filter>Foundation\Crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\NamedEvent.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\Win\NamedEventImpl.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\NamedMutex.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\Optex.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\Win\OptexImpl.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\Process.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\ProcessHdr.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\Win\ProcessImpl.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Process\TypeDef.h">
+      <Filter>Foundation\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\System\Environment.h">
+      <Filter>Foundation\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\System\Win\EnvironmentImpl.h">
+      <Filter>Foundation\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\System\SysHdr.h">
+      <Filter>Foundation\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\System\TypeDef.h">
+      <Filter>Foundation\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\SharedLibrary\SharedLibrary.h">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\SharedLibrary\SharedLibraryHdr.h">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\SharedLibrary\Win\SharedLibraryImpl.h">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\SharedLibrary\TypeDef.h">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\FormatHdr.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\NumberFormatter.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\NumberParser.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\StrConv.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\Win\StrConvImpl.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Format\TypeDef.h">
+      <Filter>Foundation\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\AuxFunc.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\GlobalMap.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\MsgCarrier.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\MsgContext.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\MsgQueueHdr.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\MsgType.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\MsgQueue\TypeDef.h">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\Cycle.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\Win\CycleImpl.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\StopWatch.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\TimeHdr.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\TimeStamp.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\Win\TimeStampImpl.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Time\TypeDef.h">
+      <Filter>Foundation\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Regex\deelx.h">
+      <Filter>Foundation\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\Regex\Regex.h">
+      <Filter>Foundation\Regex</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\DataStruct\Array2D.h">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\DataStruct\Bit.h">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\DataStruct\Buffer.h">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\DataStruct\DSHdr.h">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="Foundation\DataStruct\TypeDef.h">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Foundation\Thread\Thread.cpp">
+      <Filter>Foundation\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Win\ThreadImpl.cpp">
+      <Filter>Foundation\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\ThreadPool.cpp">
+      <Filter>Foundation\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Timer.cpp">
+      <Filter>Foundation\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\TSDataFlow.cpp">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\TSDataPriorityQueue.cpp">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\TSDataQueue.cpp">
+      <Filter>Foundation\Thread\AuxTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\AtomicFunction.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Barrier.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Condition.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Event.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Win\EventImpl.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\FastMutex.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Win\FastMutexImpl.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Mutex.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Win\MutexImpl.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\ReaderWriterMutex.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Semaphore.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Win\SemaphoreImpl.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\SpinLock.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Thread\Token.cpp">
+      <Filter>Foundation\Thread\SyncObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Exception\Exception.cpp">
+      <Filter>Foundation\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Exception\StdException.cpp">
+      <Filter>Foundation\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\DirectoryIterator.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\Win\DirectoryIteratorImpl.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\File.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\Win\FileImpl.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\MemMapFile.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\Win\MemMapFileImpl.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\Path.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\Win\PathImpl.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\FileSystem\TreeIterator.cpp">
+      <Filter>Foundation\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Utility\ByteOrder.cpp">
+      <Filter>Foundation\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Utility\RandomNumber.cpp">
+      <Filter>Foundation\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Utility\RefCountedObject.cpp">
+      <Filter>Foundation\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Utility\Trace.cpp">
+      <Filter>Foundation\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Stream\ByteStream.cpp">
+      <Filter>Foundation\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Stream\DataStream.cpp">
+      <Filter>Foundation\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Stream\FileStreamBuffer.cpp">
+      <Filter>Foundation\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Stream\MemStreamBuffer.cpp">
+      <Filter>Foundation\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\Acceptor.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\Connector.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\HostEntry.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\InetAddress.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\NetPipe.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\NetSock.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\Selector.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\SockDgram.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\SocketSet.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\SockStream.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Net\Utility.cpp">
+      <Filter>Foundation\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\Algo\md2.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\Algo\md4.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\Algo\md5.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\MDHash.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\Algo\sha1.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\Algo\sha2.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Crypt\ShaHash.cpp">
+      <Filter>Foundation\Crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\NamedEvent.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\Win\NamedEventImpl.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\Optex.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\Win\OptexImpl.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\Process.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Process\Win\ProcessImpl.cpp">
+      <Filter>Foundation\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\System\Environment.cpp">
+      <Filter>Foundation\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\System\Win\EnvironmentImpl.cpp">
+      <Filter>Foundation\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\SharedLibrary\SharedLibrary.cpp">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\SharedLibrary\Win\SharedLibraryImpl.cpp">
+      <Filter>Foundation\SharedLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Format\NumberFormatter.cpp">
+      <Filter>Foundation\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Format\NumberParser.cpp">
+      <Filter>Foundation\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Format\StrConv.cpp">
+      <Filter>Foundation\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\MsgQueue\AuxFunc.cpp">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\MsgQueue\GlobalMap.cpp">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\MsgQueue\MsgCarrier.cpp">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\MsgQueue\MsgContext.cpp">
+      <Filter>Foundation\MsgQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Time\Cycle.cpp">
+      <Filter>Foundation\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Time\StopWatch.cpp">
+      <Filter>Foundation\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\Time\TimeStamp.cpp">
+      <Filter>Foundation\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\DataStruct\Bit.cpp">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="Foundation\DataStruct\Buffer.cpp">
+      <Filter>Foundation\DataStruct</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
