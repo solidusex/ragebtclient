@@ -97,7 +97,7 @@ struct iovec
 
 
 
-
+#if(0)
 
 ///////////////error code define//////////////////////////////////
 #  define ETIME                   ERROR_SEM_TIMEOUT
@@ -139,7 +139,7 @@ struct iovec
 
 
 
-
+#endif
 
 
 

@@ -1,12 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Foundation", "Foundation.vcproj", "{25EAB807-993F-4444-A810-3190C4AAEA5A}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Foundation", "Foundation.vcxproj", "{25EAB807-993F-4444-A810-3190C4AAEA5A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FoundationTest", "FoundationTest\FoundationTest.vcproj", "{56F194AF-F100-46F8-85BE-D830F94CE676}"
-	ProjectSection(ProjectDependencies) = postProject
-		{25EAB807-993F-4444-A810-3190C4AAEA5A} = {25EAB807-993F-4444-A810-3190C4AAEA5A}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FoundationTest", "FoundationTest\FoundationTest.vcxproj", "{56F194AF-F100-46F8-85BE-D830F94CE676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
